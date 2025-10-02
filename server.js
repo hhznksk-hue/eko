@@ -83,11 +83,7 @@ app.get('/:siteName/:telegramId', (req, res) => {
 // بدء الخادم
 app.listen(PORT, () => {
   console.log(`الخادم يعمل على المنفذ ${PORT}`);
-  console.log(`يمكنك الوصول إليه عبر: http://localhost:${PORT}`);
-  console.log('المواقع المتاحة:');
-  availableSites.forEach(site => {
-    const siteName = site.replace('.html', '');
     console.log(`- http://localhost:${PORT}/${siteName}`);
-    console.log(`- http://localhost:${PORT}/${siteName}/08874555 (مع معرف Telegram كمثال)`);
+    console.log(`- http://localhost:${PORT}/${siteName});
   });
 });
