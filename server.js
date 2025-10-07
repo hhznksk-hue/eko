@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 // قائمة المواقع المتاحة
 const availableSites = [
-  // يمكنك إضافة المزيد من المواقع هنا
+  'twitter.html'
 ];
 
 // Middleware لتقديم الملفات الثابتة من مجلد public
